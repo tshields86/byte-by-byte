@@ -1,5 +1,13 @@
 /* https://www.byte-by-byte.com/listcycles/ */
 
+/*
+Given a linked list, determine whether it contains a cycle.
+
+1 -> 2 -> 3 -> 4
+     ^         |
+     |_________|
+*/
+
 class Node {
   constructor(value) {
     this.value = value;
