@@ -6,6 +6,12 @@ Given k sorted arrays, merge them into a single sorted array.
 merge({{1, 4, 7},{2, 5, 8},{3, 6, 9}}) = {1, 2, 3, 4, 5, 6, 7, 8, 9}
 */
 
+/*
+  Merge all arrays and then sort: kn * log(kn)
+
+  Priority queue: kn * log(k)
+*/
+
 /* const merge = (arr1, arr2) => {
   const merged = [];
   let idx1 = 0;
