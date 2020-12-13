@@ -22,6 +22,8 @@ subarray(
   [1, 2, 0, 0]
 ]
 
+time O(mn)
+space O(mn)
 */
 
 
@@ -44,8 +46,9 @@ const squareSubMatrix = matrix => {
           sizes[i - 1][j - 1]
         );
         sizes[i][j] = minDistFromEdge + 1;
-        max = Math.max(max, sizes[i][j]);
       }
+  
+      max = Math.max(max, sizes[i][j]);
     }
   }
 
@@ -65,5 +68,13 @@ console.log(squareSubMatrix(
     [0, 0, 1, 1],
     [1, 1, 1, 1],
     [1, 1, 1, 0]
+  ]
+));
+
+console.log(squareSubMatrix(
+  [
+    [0, 1, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0]
   ]
 ));
